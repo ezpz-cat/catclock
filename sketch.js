@@ -63,7 +63,7 @@ class Pendulum {
   }
 }
 function setup() {
-  createCanvas(1250, 1100);
+  createCanvas(windowWidth, windowHeight);
   pendulum = new Pendulum(width / 2, 0, 417)
 }
 function draw() {
@@ -72,6 +72,11 @@ function draw() {
   pendulum.drag(); // for user interaction
   pendulum.display();
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function mousePressed() {
   pendulum.clicked(mouseX, mouseY);
 }
