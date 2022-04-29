@@ -63,7 +63,7 @@ class Pendulum {
   }
 }
 function setup() {
-  createCanvas(750, 750);
+  createCanvas(1500, 1500);
   pendulum = new Pendulum(width / 2, 0, 417)
 }
 function draw() {
