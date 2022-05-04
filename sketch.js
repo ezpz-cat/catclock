@@ -39,7 +39,7 @@ class Pendulum {
     image(tail, 0, -200, 0, 0);
     pop();
     push();
-    translate(this.position.x,this.position.y);
+    translate(2/width,715);
     imageMode(CENTER);
     image(body,0,0,0,0);
     pop();
