@@ -41,7 +41,7 @@ class Pendulum {
     push();
     translate(width/2,300);
     imageMode(CENTER);
-    image(body,0,0,0,0);
+    image(body,0,0,368,500);
     pop();
   }
   clicked(mx, my) {
